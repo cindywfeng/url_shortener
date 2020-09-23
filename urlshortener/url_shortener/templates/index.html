@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.0/dist/paper.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="index.css">
+    <title>URL shortener</title>
+</head>
+<body>
+    <h1 style="text-align:center;" class="animate__animated animate__pulse">URL Shortener</h1>
+    <form method="POST" action="{{ url_for('server.add_url') }}" class="row flex-center margin-large">
+        <!-- <label for="long_url" class="sm-4 col">Enter the URL to be shortened here!</label> -->
+        <input style="margin-right:10px;" type="input" name="long_url" class="sm-4 col" placeholder="URL to be shortened">
+        <input id="submit-bn" type="submit" class="sm-1 col">
+    </form>
+
+</body>
+</html>
